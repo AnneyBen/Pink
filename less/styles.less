@@ -1,0 +1,35 @@
+
+//lessc less/styles.less > css/style.css
+
+@import url("less/help/fonts.less");
+@import url("less/help/mixins.less");
+
+*{
+    box-sizing: border-box;
+    outline: none
+}
+
+html{
+    .pama();
+}
+
+
+//general styles
+@import url("less/base/index/header.less");
+@import url("less/base/index/footer.less");
+
+//only styles from index
+
+@import url("less/base/index/section-featured.less");
+@import url("less/base/index/section-about.less");
+@import url("less/base/index/section-reviews.less");
+@import url("less/base/index/section-contacts.less");
+
+//only styles from catalog
+@import url("less/base/catalog/catalog-list.less");
+@import url("less/base/catalog/section-processing.less");
+
+//only styles from form
+@import url("less/base/form/section-form.less");
+
+
